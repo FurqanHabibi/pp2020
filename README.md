@@ -1,30 +1,31 @@
 ## Requirements
-- install conda (if you haven't).
+- Install conda (if you haven't).
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
-- create a conda environment and use it.
+- Create a conda environment and use it.
 ```
 conda create -n <env_name> python=3.8
 conda activate <env_name>
 ```
-- install GPU requirements for Tensorflow.
+- Install GPU requirements for Tensorflow.
    - please refer [here](https://www.tensorflow.org/install/gpu#install_cuda_with_apt)
-- install Tensorflow 2 (we use nightly here to get latest features)
+
+- Install Tensorflow 2 (we use nightly here to get latest features)
 ```
 pip install tf-nightly-gpu==2.4.0.dev20201023
 ```
-- install PyTorch.
+- Install PyTorch.
 ```
 pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-- install ONNX.
+- Install ONNX.
 ```
 pip install tensorflow-addons
 pip install git+https://github.com/onnx/onnx-tensorflow.git
 ```
-- install other requirements.
+- Install other requirements.
 ```
 conda install -c conda-forge notebook ipywidgets tqdm matplotlib
 conda install pandas
@@ -35,9 +36,8 @@ conda install pandas
 - Run [this notebook](CarliniWagnerL2.ipynb) to perform the attack and generate the adversarial examples.
 
 Some things to note:
-- the classifier threshold(s) for the biqa model are tunable.
-- various hyperparameters are supported by the C&W algorithm. Please refer to the [code](carlini_wagner_l2.py).
-
+- The classifier threshold(s) for the biqa model are tunable.
+- Various hyperparameters are supported by the C&W algorithm. Please refer to the [code](carlini_wagner_l2.py).
 
 ---
 # 2020-Pixel-Privacy-Task: Quality Camouflage for Social Images
