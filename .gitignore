@@ -6,6 +6,8 @@ pp2020_dev/
 pp2020_test/
 BIQA_model/biqa.onnx
 BIQA_model/KonCept512.pth
+EMOd/
+sensitivity_map_model/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

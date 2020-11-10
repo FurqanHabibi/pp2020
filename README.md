@@ -28,7 +28,7 @@ pip install git+https://github.com/onnx/onnx-tensorflow.git
 - Install other requirements.
 ```
 conda install -c conda-forge notebook ipywidgets tqdm matplotlib
-conda install pandas
+conda install pandas scipy
 ```
 
 ## Quickstart
